@@ -1,0 +1,103 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --primary: #2563eb;
+  --dark-bg: #0f172a;
+  --card-bg: #ffffff;
+  --text-dark: #1e293b;
+  --text-light: #94a3b8;
+  --border: #e2e8f0;
+}
+
+/* BODY */
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: var(--dark-bg);
+  color: white;
+  min-height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+/* BUTTONS */
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  background: var(--primary);
+  color: white;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: white;
+  color: var(--text-dark);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+/* INPUTS */
+input, select {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: var(--primary);
+}
